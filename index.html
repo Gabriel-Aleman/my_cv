@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Profile - Electrical Engineering & IT</title>
+    <title>CV: Gabriel Alemán Ruiz</title>
     <link rel="stylesheet" href="scr/styleSheet.css">
 
-    <!-- Favicon clásico (formato .ico o .png) -->
+
+    <!-- Favicon clásico -->
     <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/9645/9645824.png">
 </head>
 
@@ -15,10 +16,33 @@
     <div class="sidebar" id="sidebar">
         <button class="toggle-btn" onclick="toggleSidebar()">−</button>
         <ul class="menu">
-            <li><span class="menu-text">🏠 Home</span></li>
-            <li><span class="menu-text">🏅 Some of my achievements</span></li>
+            <li><span class="menu-text"> <a href="#gabriel">About me</a></span></li>
+            <li><span class="menu-text"><a href="#mis_skills">My skills</a></span></li>
             <li><span class="menu-text">🔍 More about me</span></li>
         </ul>
+    </div>
+    <div id="informacion_importante">
+
+        <a href="https://wa.me/50685465943?text=Hola!" target="_blank" rel="noopener">
+            <img src=https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/512px-WhatsApp.svg.png?20220228223904"
+                alt="Escríbenos por WhatsApp">
+        </a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1
+            &to=gabrieldejesusalemanruiz@gmail.com
+            &su=Saludo
+            &body=Hola%21" target="_blank" rel="noopener">
+            <img src="https://cdn-icons-png.flaticon.com/512/6711/6711567.png" alt="Enviar correo a Gabriel" width="64"
+                style="border:0; cursor:pointer;">
+        </a>
+
+
+        <a href="https://www.linkedin.com/in/gabriel-alem%C3%A1n-18b9302b4/">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/500px-LinkedIn_logo_initials.png"
+                alt="">
+        </a>
+        <a href="https://github.com/Gabriel-Aleman">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt=""></a>
+
     </div>
 
     <main>
@@ -30,30 +54,7 @@
             <div class="floating-element"></div>
             <div class="floating-element"></div>
         </div>
-        <div id="informacion_importante">
 
-            <!-- Enviar un mensaje de whatsapp-->
-            <a href="https://wa.me/50685465943?text=Hola!" target="_blank" rel="noopener">
-                <img src=https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/512px-WhatsApp.svg.png?20220228223904"
-                    alt="Escríbenos por WhatsApp">
-            </a>
-            <a href="https://mail.google.com/mail/?view=cm&fs=1
-            &to=gabrieldejesusalemanruiz@gmail.com
-            &su=Saludo
-            &body=Hola%21" target="_blank" rel="noopener">
-                <img src="https://cdn-icons-png.flaticon.com/512/6711/6711567.png" alt="Enviar correo a Gabriel"
-                    width="64" style="border:0; cursor:pointer;">
-            </a>
-
-
-            <a href="https://www.linkedin.com/in/gabriel-alem%C3%A1n-18b9302b4/">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/500px-LinkedIn_logo_initials.png"
-                    alt="">
-            </a>
-            <a href="https://github.com/Gabriel-Aleman">
-                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt=""></a>
-
-        </div>
 
         <div class="container">
 
@@ -67,7 +68,8 @@
             </section>
 
             <div class="content">
-                <section class="section">
+                <!--Acerca de mí-->
+                <section id="gabriel" class="section">
                     <h2 class="section-title">About myself</h2>
                     <div class="about-text">
                         I currently hold a Bachelor's degree in Electrical Engineering from the University of Costa
@@ -142,7 +144,8 @@
                 </section>
 
                 <!--SKILLS-->
-                <div class="container">
+
+                <div id="mis_skills" class="container">
                     <div class="header">
                         <h1 class="main-title">Technical Expertise</h1>
                         <p class="subtitle">Skills & Technologies</p>
@@ -390,6 +393,99 @@
                     </div>
                 </div>
 
+                <!--Experiencia laboral-->
+                <section id="mi_experiencia" class="section">
+                    <h2 class="section-title">My work experience</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <h3 class="job-title">Project Engineer</h3>
+                            <div class="company">Sistemas IQ</div>
+                            <div class="duration">2024 - Present</div>
+                            <div class="description">
+                                Tasks focused on industrial control and automation. Primarily centered on the
+                                development of graphical user interfaces <span class="tech-highlight">HMI</span>,
+                                supervision <span class="tech-highlight">SCADA</span>, industrial network maintenance,
+                                as well as installation and configuration of industrial hardware.
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <h3 class="job-title">Data Analyst Internship</h3>
+                            <div class="company">Sporting Football Club</div>
+                            <div class="duration">2024</div>
+                            <div class="description">
+                                Development of a web-based data application for sports analytics. Implementation of
+                                visualization tools and information processing to optimize team performance and
+                                strategic decision-making.
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <!--Educación-->
+                <section id="mi_educacion" class="section">
+                    <h2 class="section-title">Education</h2>
+
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <h3 class="student-title">Bachelor's Degree in Electrical Engineering</h3>
+                            <div class="company">University of Costa Rica</div>
+                            <div class="duration">2019 - 2024</div>
+                            <div class="description">
+                                Comprehensive program covering electrical systems, power electronics, control systems,
+                                and engineering fundamentals. Developed strong analytical and problem-solving skills
+                                with hands-on experience in industrial applications.
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <h3 class="student-title ">Licentiate Degree Student</h3>
+                            <div class="company">University of Costa Rica</div>
+                            <div class="duration">2024 - Present</div>
+                            <div class="description">
+                                Advanced studies in electrical engineering with focus on specialized applications and
+                                research methodologies. Continuing education to deepen expertise in industrial control
+                                systems and emerging technologies.
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <h3 class="student-title ">Specialization in Web Design</h3>
+                            <div class="company">Fidelitas University</div>
+                            <div class="duration">2025 - Present</div>
+                            <div class="description">
+                                Specialized training in modern web development, user interface design, and digital user
+                                experience. Combining technical engineering background with contemporary web
+                                technologies and design principles.
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="mis_idiomas" class="section">
+                    <h2 class="section-title">Language skills</h2>
+                    <div class="lang-grid">
+                        <div class="language-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Flag_of_Spain.svg/2560px-Flag_of_Spain.svg.png" alt="">
+                            <div class="language-name">🇪🇸 Spanish</div>
+                            <div class="language-level">Native Speaker</div>
+                        </div>
+                        <div class="language-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Flag_of_the_United_Kingdom_%282-3%29.svg/2560px-Flag_of_the_United_Kingdom_%282-3%29.svg.png" alt="">
+
+                            <div class="language-name">🇪🇳 English</div>
+                            <div class="language-level">Advanced</div>
+                            <div class="language-cert">TOEFL 93 Score</div>
+                        </div>
+                        <div class="language-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Flag_of_Japan.svg/330px-Flag_of_Japan.svg.png" alt="">
+
+                            <div class="language-name">🇯🇵 Japanese</div>
+                            <div class="language-level">Intermediate</div>
+                            <div class="language-cert">JLPT N4</div>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
 
