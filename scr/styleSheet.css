@@ -75,7 +75,7 @@
     flex-direction: row;
     align-items: end;
     width: 10%;
-    height: 5%;
+    height: 4%;
     margin-left: 2%;
 
 }
@@ -112,7 +112,7 @@
     z-index: 20;
     font-family: monospace;
     font-size: 14px;
-    text-align: center;
+    text-align: left;
 }
 
 .sidebar.collapsed {
