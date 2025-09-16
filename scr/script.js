@@ -1,3 +1,5 @@
+const { not } = require("xstate");
+
 // Add smooth scrolling and entrance animations
 document.addEventListener('DOMContentLoaded', function () {
     // Intersection Observer for scroll animations
@@ -53,4 +55,15 @@ document.addEventListener('DOMContentLoaded', function () {
 function toggleSidebar() {
     const sidebar = document.getElementById('sidebar');
     sidebar.classList.toggle('collapsed');
+    // Obtener el botón
+    const boton = document.getElementById("botonDescargaCV");
+
+    // Alternar visibilidad
+    if (boton.style.visibility === "hidden") {
+        boton.style.visibility = "visible";
+    } else {
+        boton.style.visibility = "hidden";
+    }
+
+    console.log("Hola mundo");
 }

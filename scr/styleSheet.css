@@ -80,6 +80,25 @@
 
 }
 
+#botonDescargaCV{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#botonDescargaCV button{
+    padding: 5px 15px;
+    background-color: #555;
+    font-weight: bold;
+    color: white;
+    border-radius: 15px;
+}
+
+
+#botonDescargaCV button:hover{
+    transform: scale(1.1);
+}
 
 #informacion_importante a {
     width: 20%;
