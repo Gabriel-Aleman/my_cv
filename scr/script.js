@@ -53,8 +53,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 //SIDEBAR:
 function toggleSidebar() {
-    const sidebar = document.getElementById('sidebar');
-    sidebar.classList.toggle('collapsed');
     // Obtener el botón
     const boton = document.getElementById("botonDescargaCV");
 
@@ -64,6 +62,8 @@ function toggleSidebar() {
     } else {
         boton.style.visibility = "hidden";
     }
+    const sidebar = document.getElementById('sidebar');
+    sidebar.classList.toggle('collapsed');
 
-    console.log("Hola mundo");
+
 }
