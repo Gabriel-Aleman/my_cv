@@ -1,69 +1,29 @@
-const { not } = require("xstate");
+document.addEventListener('DOMContentLoaded', () => {
+  // Scroll reveal
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
-// Add smooth scrolling and entrance animations
-document.addEventListener('DOMContentLoaded', function () {
-    // Intersection Observer for scroll animations
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.animationPlayState = 'running';
-            }
-        });
-    }, {
-        threshold: 0.1
+  // Active link in nav
+  const links = [...document.querySelectorAll('.nav-links a')];
+  const spy = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + e.target.id));
     });
+  }, { rootMargin: '-45% 0px -50% 0px' });
+  document.querySelectorAll('section[id]').forEach(s => spy.observe(s));
 
-    // Observe all sections
-    document.querySelectorAll('.section').forEach(section => {
-        observer.observe(section);
-    });
-
-    // Add click effects to interest cards
-    document.querySelectorAll('.interest-card').forEach(card => {
-        card.addEventListener('click', function () {
-            this.style.transform = 'scale(0.95)';
-            setTimeout(() => {
-                this.style.transform = '';
-            }, 150);
-        });
-    });
-
-    // Add hover effect to postgrad tags
-    document.querySelectorAll('.postgrad-tag').forEach(tag => {
-        tag.addEventListener('mouseenter', function () {
-            this.style.transform = 'translateY(-5px) scale(1.05)';
-        });
-
-        tag.addEventListener('mouseleave', function () {
-            this.style.transform = 'translateY(-2px) scale(1)';
-        });
-    });
-
-    // Parallax effect for floating elements
-    window.addEventListener('scroll', () => {
-        const scrolled = window.pageYOffset;
-        const parallaxElements = document.querySelectorAll('.floating-element');
-
-        parallaxElements.forEach((element, index) => {
-            const speed = 0.2 + (index * 0.1);
-            element.style.transform = `translateY(${scrolled * speed}px) rotate(${scrolled * 0.1}deg)`;
-        });
-    });
+  // Theme toggle
+  const btn = document.getElementById('themeBtn');
+  const root = document.documentElement;
+  try { const t = localStorage.getItem('theme'); if (t) root.dataset.theme = t; } catch (e) {}
+  const isDark = () => root.dataset.theme ? root.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+  const paint = () => { btn.innerHTML = isDark() ? '<i class="bi bi-sun"></i>' : '<i class="bi bi-moon"></i>'; };
+  paint();
+  btn.addEventListener('click', () => {
+    root.dataset.theme = isDark() ? 'light' : 'dark';
+    try { localStorage.setItem('theme', root.dataset.theme); } catch (e) {}
+    paint();
+  });
 });
-
-//SIDEBAR:
-function toggleSidebar() {
-    // Obtener el botón
-    const boton = document.getElementById("botonDescargaCV");
-
-    // Alternar visibilidad
-    if (boton.style.visibility === "hidden") {
-        boton.style.visibility = "visible";
-    } else {
-        boton.style.visibility = "hidden";
-    }
-    const sidebar = document.getElementById('sidebar');
-    sidebar.classList.toggle('collapsed');
-
-
-}
