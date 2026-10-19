@@ -1,553 +1,164 @@
 <!DOCTYPE html>
-<html lang="sp">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV: Gabriel Alemán Ruiz</title>
-    <link rel="stylesheet" href="scr/styleSheet.css">
-
-
-    <!-- Favicon clásico -->
-    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/9645/9645824.png">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gabriel Alemán Ruiz</title>
+  <meta name="description" content="Electrical Engineer — industrial automation, HMI/SCADA, embedded systems and data.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23c2410c'/><text x='50' y='66' font-size='46' text-anchor='middle' fill='white' font-family='Georgia'>GA</text></svg>">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="scr/styleSheet.css">
 </head>
-
 <body>
-    <div class="sidebar collapsed" id="sidebar">
-        <button class="toggle-btn" onclick="toggleSidebar()">−</button>
-        <ul class="menu">
-            <li>
-                <span class="menu-text">
-                    <i class="bi bi-person"></i> <a href="#gabriel">About Me</a>
-                </span>
-            </li>
-            <li>
-                <span class="menu-text">
-                    <i class="bi bi-journal-code"></i> <a href="#mis_skills">My Skills</a>
-                </span>
-            </li>
-            <li>
-                <span class="menu-text">
-                    <i class="bi bi-tools"></i> <a href="#technical-skills">Technical Skills</a>
-                </span>
-            </li>
-            <li>
-                <span class="menu-text">
-                    <i class="bi bi-people"></i> <a href="#soft-skills">Soft Skills</a>
-                </span>
-            </li>
-            <li>
-                <span class="menu-text">
-                    <i class="bi bi-briefcase"></i> <a href="#mi_experiencia">Experience</a>
-                </span>
-            </li>
-            <li>
-                <span class="menu-text">
-                    <i class="bi bi-mortarboard"></i> <a href="#mi_educacion">Education</a>
-                </span>
-            </li>
-            <li>
-                <span class="menu-text">
-                    <i class="bi bi-translate"></i> <a href="#mis_idiomas">Languages</a>
-                </span>
-            </li>
-            <!--
-            <li>
-                <span class="menu-text">
-                    <i class="bi bi-search"></i> More About Me
-                </span>
-            </li>
-            -->
-        </ul>
-        <div style="visibility: hidden;" id="botonDescargaCV">
-            <a  href="docs/Gabriel DeJesusAleman CV .pdf" download class="mi-enlace">
-                <i class="bi bi-download"></i>  C.V
-            </a>
 
-            <a  href="docs/Cover-letter Gabriel Alemán.pdf" download class="mi-enlace">
-                <i class="bi bi-download"></i> Cover letter
-            </a>
-        </div>
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#top">gabriel<span>.</span>aleman</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#soft-skills">Soft skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#languages">Languages</a></li>
+    </ul>
+    <button class="theme-btn" id="themeBtn" aria-label="Toggle theme"><i class="bi bi-moon"></i></button>
+  </div>
+</nav>
 
+<main id="top">
+
+  <header class="hero">
+    <div class="reveal">
+      <p class="eyebrow">Electrical Engineer · Costa Rica</p>
+      <h1>Gabriel de Jesús<br><em>Alemán Ruiz</em></h1>
+      <p class="role">Industrial automation, HMI/SCADA and data — applying technology to solve real-world problems.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="docs/Gabriel DeJesusAleman CV .pdf" download><i class="bi bi-download"></i> Download CV</a>
+        <a class="btn" href="docs/Cover-letter Gabriel Alemán.pdf" target="_blank"><i class="bi bi-file-earmark-text"></i> Cover letter</a>
+      </div>
     </div>
+    <ul class="facts reveal">
+      <li><small>Currently</small>Project Engineer at Sistemas IQ</li>
+      <li><small>Education</small>B.Sc. Electrical Engineering, University of Costa Rica — Computers &amp; Networks</li>
+      <li><small>Contact</small>
+        <div class="socials">
+          <a href="mailto:gabrieldejesusalemanruiz@gmail.com" aria-label="Email"><i class="bi bi-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/gabriel-alem%C3%A1n-18b9302b4/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="https://github.com/Gabriel-Aleman" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+          <a href="https://wa.me/50685465943?text=Hola!" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </li>
+    </ul>
+  </header>
 
-    <div id="informacion_importante">
-
-        <a href="https://wa.me/50685465943?text=Hola!" target="_blank" rel="noopener">
-            <img src=https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/512px-WhatsApp.svg.png?20220228223904"
-                alt="Escríbenos por WhatsApp">
-        </a>
-        <a href="https://mail.google.com/mail/?view=cm&fs=1
-            &to=gabrieldejesusalemanruiz@gmail.com
-            &su=Saludo
-            &body=Hola%21" target="_blank" rel="noopener">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/1280px-Gmail_icon_%282020%29.svg.png" alt="Enviar correo a Gabriel" width="64"
-                style="border:0; cursor:pointer;">
-        </a>
-
-
-        <a href="https://www.linkedin.com/in/gabriel-alem%C3%A1n-18b9302b4/">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/500px-LinkedIn_logo_initials.png"
-                alt="">
-        </a>
-        <a href="https://github.com/Gabriel-Aleman">
-            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt=""></a>
-
+  <section id="about" class="reveal">
+    <div class="about">
+      <div>
+        <p class="eyebrow">01 — About</p>
+        <h2>Engineering with a purpose</h2>
+      </div>
+      <div>
+        <p>I hold a Bachelor's degree in Electrical Engineering from the University of Costa Rica, with an emphasis on computers and networks.</p>
+        <p>I'm deeply passionate about science and information technology — especially industrial automation, embedded systems, web development, data analysis and artificial intelligence, the technologies I believe are shaping the future.</p>
+        <p>I value continuous learning. My main goal is to apply science and technology to design impactful solutions that address real-world challenges and improve human well-being.</p>
+      </div>
     </div>
+    <div class="interests">
+      <div class="interest"><i class="bi bi-gear-wide-connected"></i><h3>Industrial Automation</h3><p>Automated systems that make manufacturing more efficient and reliable.</p></div>
+      <div class="interest"><i class="bi bi-cpu"></i><h3>Embedded Systems</h3><p>Smart hardware with integrated software for specialized applications.</p></div>
+      <div class="interest"><i class="bi bi-globe2"></i><h3>Web Development</h3><p>Dynamic, responsive web applications with modern technologies.</p></div>
+      <div class="interest"><i class="bi bi-bar-chart-line"></i><h3>Data Analysis</h3><p>Turning complex datasets into insights for better decisions.</p></div>
+      <div class="interest"><i class="bi bi-robot"></i><h3>Artificial Intelligence</h3><p>Machine learning algorithms and AI applications across domains.</p></div>
+      <div class="interest"><i class="bi bi-book"></i><h3>Continuous Learning</h3><p>Always expanding into emerging technologies and methods.</p></div>
+    </div>
+  </section>
 
-    <main>
+  <section id="skills">
+    <p class="eyebrow">02 — Technical skills</p>
+    <h2>Skills &amp; technologies</h2>
+    <div class="skills">
+      <article class="skill reveal"><header><i class="bi bi-display"></i><h3>HMI &amp; SCADA</h3></header><p>Industrial interfaces built with advanced automation tools.</p><ul class="tags"><li>Ignition</li><li>FactoryTalk View</li><li>Industrial HMI</li><li>SCADA</li></ul></article>
+      <article class="skill reveal"><header><i class="bi bi-motherboard"></i><h3>PLC Programming</h3></header><p>Hands-on programmable logic controllers for industrial automation.</p><ul class="tags"><li>Rockwell Automation</li><li>Industrial Control</li><li>Logic Programming</li></ul></article>
+      <article class="skill reveal"><header><i class="bi bi-code-slash"></i><h3>Programming</h3></header><p>Multiple languages for scientific, engineering and automation work.</p><ul class="tags"><li>Python</li><li>C++</li><li>C</li><li>MATLAB</li></ul></article>
+      <article class="skill reveal"><header><i class="bi bi-graph-up"></i><h3>Data Science</h3></header><p>Data analysis and visualization libraries for clear insights.</p><ul class="tags"><li>NumPy</li><li>Pandas</li><li>Matplotlib</li><li>Plotly</li><li>Seaborn</li><li>Streamlit</li><li>Dash</li></ul></article>
+      <article class="skill reveal"><header><i class="bi bi-diagram-3"></i><h3>Computer Networks</h3></header><p>Network topology design, configuration and maintenance.</p><ul class="tags"><li>TCP/IP</li><li>Network Topology</li><li>Configuration</li><li>Maintenance</li></ul></article>
+      <article class="skill reveal"><header><i class="bi bi-cpu-fill"></i><h3>Integrated Circuit Design</h3></header><p>Digital design, testing and synthesis with Verilog and open-source tools.</p><ul class="tags"><li>Verilog</li><li>Vivado</li><li>GTKWave</li><li>Digital Design</li></ul></article>
+      <article class="skill reveal"><header><i class="bi bi-lightning-charge"></i><h3>Electronics</h3></header><p>Solid grounding in electronic principles and applications.</p><ul class="tags"><li>Circuit Analysis</li><li>Component Design</li><li>Signal Processing</li></ul></article>
+      <article class="skill reveal"><header><i class="bi bi-database"></i><h3>Databases</h3></header><p>Data management and querying for efficient operations.</p><ul class="tags"><li>SQL</li><li>Data Management</li><li>Querying</li></ul></article>
+      <article class="skill reveal"><header><i class="bi bi-git"></i><h3>Version Control</h3></header><p>Code management and collaborative development.</p><ul class="tags"><li>Git</li><li>GitHub</li><li>Collaboration</li></ul></article>
+      <article class="skill reveal"><header><i class="bi bi-filetype-html"></i><h3>Front-End</h3></header><p>Web technologies for interface development.</p><ul class="tags"><li>HTML</li><li>CSS</li><li>Web Interfaces</li></ul></article>
+    </div>
+  </section>
 
+  <section id="soft-skills">
+    <p class="eyebrow">03 — Soft skills</p>
+    <h2>How I work</h2>
+    <div class="skills">
+      <article class="skill reveal"><header><i class="bi bi-puzzle"></i><h3>Problem Solving</h3></header><p>Analytical thinking and creative solutions to complex technical challenges.</p><ul class="tags"><li>Analytical Thinking</li><li>Critical Analysis</li></ul></article>
+      <article class="skill reveal"><header><i class="bi bi-people"></i><h3>Teamwork</h3></header><p>Effective collaboration in diverse, multidisciplinary teams.</p><ul class="tags"><li>Communication</li><li>Leadership</li><li>Adaptability</li></ul></article>
+      <article class="skill reveal"><header><i class="bi bi-award"></i><h3>Hardworking</h3></header><p>Committed to high-quality results and persistent through hard projects.</p><ul class="tags"><li>Dedication</li><li>Quality Focus</li><li>Reliability</li></ul></article>
+      <article class="skill reveal"><header><i class="bi bi-rocket-takeoff"></i><h3>Motivated to Learn</h3></header><p>Staying current with emerging technologies and best practices.</p><ul class="tags"><li>Curiosity</li><li>Self-Improvement</li><li>Innovation</li></ul></article>
+    </div>
+  </section>
 
+  <section id="experience">
+    <div class="two-col">
+      <div>
+        <p class="eyebrow">04 — Experience</p>
+        <h2>Work</h2>
+        <ol class="timeline">
+          <li class="current reveal">
+            <div class="tl-head"><h3>Project Engineer</h3><time>2024 — Present</time></div>
+            <div class="org">Sistemas IQ</div>
+            <p>Industrial control and automation: development of HMI graphical interfaces and SCADA supervision, industrial network maintenance, and installation and configuration of industrial hardware.</p>
+          </li>
+          <li class="reveal">
+            <div class="tl-head"><h3>Data Analyst Intern</h3><time>2024</time></div>
+            <div class="org">Sporting Football Club</div>
+            <p>Built a web-based sports analytics app with visualization tools and data processing to optimize team performance and strategic decisions.</p>
+          </li>
+        </ol>
+      </div>
+      <div id="education">
+        <p class="eyebrow">05 — Education</p>
+        <h2>Studies</h2>
+        <ol class="timeline">
+          <li class="current reveal">
+            <div class="tl-head"><h3>Specialization in Web Design</h3><time>2025 — Present</time></div>
+            <div class="org">Fidelitas University</div>
+            <p>Modern web development, UI design and digital user experience.</p>
+          </li>
+          <li class="current reveal">
+            <div class="tl-head"><h3>Licentiate in Electrical Engineering</h3><time>2024 — Present</time></div>
+            <div class="org">University of Costa Rica</div>
+            <p>Advanced studies focused on industrial control systems and emerging technologies.</p>
+          </li>
+          <li class="reveal">
+            <div class="tl-head"><h3>B.Sc. Electrical Engineering</h3><time>2019 — 2024</time></div>
+            <div class="org">University of Costa Rica</div>
+            <p>Emphasis on computers and networks. Electrical systems, power electronics, control systems and engineering fundamentals.</p>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
 
-        <div class="floating-elements">
-            <div class="floating-element"></div>
-            <div class="floating-element"></div>
-            <div class="floating-element"></div>
-        </div>
+  <section id="languages">
+    <p class="eyebrow">06 — Languages</p>
+    <h2>Languages</h2>
+    <div class="langs">
+      <div class="lang reveal"><h3>Spanish</h3><div class="lvl">Native</div><div class="meter"><span style="width:100%"></span></div><div class="cert">Mother tongue</div></div>
+      <div class="lang reveal"><h3>English</h3><div class="lvl">Advanced</div><div class="meter"><span style="width:85%"></span></div><div class="cert">TOEFL iBT · 93</div></div>
+      <div class="lang reveal"><h3>Japanese</h3><div class="lvl">Intermediate</div><div class="meter"><span style="width:45%"></span></div><div class="cert">JLPT N4</div></div>
+    </div>
+  </section>
 
+</main>
 
-        <div class="container">
+<footer>
+  Let's build something together — <a href="mailto:gabrieldejesusalemanruiz@gmail.com">gabrieldejesusalemanruiz@gmail.com</a>
+</footer>
 
-            <section class="hero-section">
-                <div class="profile-avatar">🎓</div>
-                <h1 style="font-size: 30px;">Gabriel de Jesús Alemán Ruiz</h1>
-
-                <h1 class="hero-title">Electrical Engineer</h1>
-                <p class="hero-subtitle">Bachelor's degree: Emphasis on computers & Networks</p>
-                <p class="hero-university">University of Costa Rica Graduate</p>
-            </section>
-
-            <div class="content">
-                <!--Acerca de mí-->
-                <section id="gabriel" class="section">
-                    <h2 class="section-title">About myself</h2>
-                    <div class="about-text">
-                        I currently hold a Bachelor's degree in Electrical Engineering from the University of Costa
-                        Rica,
-                        having graduated with an emphasis on the field of computers and networks. I am deeply passionate
-                        about science and various fields within information technology.
-                        <br>
-                        My interests include areas such as industrial automation, embedded systems, web development,
-                        data
-                        analysis, and artificial intelligence—technologies that I believe are shaping the future.
-                        <br>
-
-                        I value continuous learning and am always eager to expand my knowledge and skills across
-                        different
-                        areas.
-                        <br>
-
-                        My main professional objective is to apply science and technology in the design of impactful
-                        solutions that address real-world challenges and foster the improvement of human well-being.
-
-
-                    </div>
-                </section>
-                <!--Areas de interes-->
-                <section class="section">
-                    <h2 class="section-title">Areas of Interest</h2>
-                    <div class="interests-grid">
-                        <div class="interest-card">
-                            <span class="interest-icon">🏭</span>
-                            <h3 class="interest-title">Industrial Automation</h3>
-                            <p class="interest-description">Designing and implementing automated systems that enhance
-                                manufacturing efficiency and reliability.</p>
-                        </div>
-
-                        <div class="interest-card">
-                            <span class="interest-icon">🔧</span>
-                            <h3 class="interest-title">Embedded Systems</h3>
-                            <p class="interest-description">Developing intelligent hardware solutions with integrated
-                                software for specialized applications.</p>
-                        </div>
-
-                        <div class="interest-card">
-                            <span class="interest-icon">🌐</span>
-                            <h3 class="interest-title">Web Development</h3>
-                            <p class="interest-description">Creating dynamic, responsive web applications using modern
-                                frameworks and technologies.</p>
-                        </div>
-
-                        <div class="interest-card">
-                            <span class="interest-icon">📊</span>
-                            <h3 class="interest-title">Data Analysis</h3>
-                            <p class="interest-description">Extracting meaningful insights from complex datasets to
-                                drive
-                                informed decision-making.</p>
-                        </div>
-
-                        <div class="interest-card">
-                            <span class="interest-icon">🤖</span>
-                            <h3 class="interest-title">Artificial Intelligence</h3>
-                            <p class="interest-description">Exploring machine learning algorithms and AI applications
-                                across
-                                various domains.</p>
-                        </div>
-
-                        <div class="interest-card">
-                            <span class="interest-icon">📚</span>
-                            <h3 class="interest-title">Continuous Learning</h3>
-                            <p class="interest-description">Always eager to expand knowledge and skills in emerging
-                                technologies and methodologies.</p>
-                        </div>
-                    </div>
-                </section>
-
-                <!--SKILLS-->
-
-                <div id="mis_skills" class="container">
-                    <div class="header">
-                        <h1 class="main-title">Technical Expertise</h1>
-                        <p class="subtitle">Skills & Technologies</p>
-                    </div>
-
-                    <div class="skills-grid" id="technical-skills">
-                        <div class="skill-card electronics">
-                            <div class="skill-header">
-                                <div class="skill-icon">⚡</div>
-                                <div class="skill-title">Electronics</div>
-                            </div>
-                            <div class="skill-description">
-                                Solid knowledge of electronic principles and applications.
-                            </div>
-                            <div class="skill-tags">
-                                <span class="skill-tag">Circuit Analysis</span>
-                                <span class="skill-tag">Component Design</span>
-                                <span class="skill-tag">Signal Processing</span>
-                            </div>
-                        </div>
-
-                        <div class="skill-card electronics">
-                            <div class="skill-header">
-                                <div class="skill-icon">🔌</div>
-                                <div class="skill-title">Integrated Circuit Design</div>
-                            </div>
-                            <div class="skill-description">
-                                Experience in digital design, testing, and synthesis using Verilog and open-source
-                                tools.
-                            </div>
-                            <div class="skill-tags">
-                                <span class="skill-tag">Verilog</span>
-                                <span class="skill-tag">Vivado</span>
-                                <span class="skill-tag">GTKWave</span>
-                                <span class="skill-tag">Digital Design</span>
-                            </div>
-                        </div>
-
-                        <div class="skill-card programming">
-                            <div class="skill-header">
-                                <div class="skill-icon">💻</div>
-                                <div class="skill-title">Programming Languages</div>
-                            </div>
-                            <div class="skill-description">
-                                Proficient in multiple programming languages for scientific, engineering, and automation
-                                applications.
-                            </div>
-                            <div class="skill-tags">
-                                <span class="skill-tag">Python</span>
-                                <span class="skill-tag">C++</span>
-                                <span class="skill-tag">C</span>
-                                <span class="skill-tag">MATLAB</span>
-                            </div>
-                        </div>
-
-                        <div class="skill-card web">
-                            <div class="skill-header">
-                                <div class="skill-icon">🌐</div>
-                                <div class="skill-title">Front-End Development</div>
-                            </div>
-                            <div class="skill-description">
-                                Familiar with web technologies for basic interface development.
-                            </div>
-                            <div class="skill-tags">
-                                <span class="skill-tag">HTML</span>
-                                <span class="skill-tag">CSS</span>
-                                <span class="skill-tag">Web Interfaces</span>
-                            </div>
-                        </div>
-
-                        <div class="skill-card data">
-                            <div class="skill-header">
-                                <div class="skill-icon">🗄️</div>
-                                <div class="skill-title">Databases</div>
-                            </div>
-                            <div class="skill-description">
-                                Skilled in data management and querying for efficient data operations.
-                            </div>
-                            <div class="skill-tags">
-                                <span class="skill-tag">SQL</span>
-                                <span class="skill-tag">Data Management</span>
-                                <span class="skill-tag">Querying</span>
-                            </div>
-                        </div>
-
-                        <div class="skill-card data">
-                            <div class="skill-header">
-                                <div class="skill-icon">📊</div>
-                                <div class="skill-title">Data Science</div>
-                            </div>
-                            <div class="skill-description">
-                                Experience with data analysis and visualization libraries for comprehensive data
-                                insights.
-                            </div>
-                            <div class="skill-tags">
-                                <span class="skill-tag">NumPy</span>
-                                <span class="skill-tag">Pandas</span>
-                                <span class="skill-tag">Matplotlib</span>
-                                <span class="skill-tag">Plotly</span>
-                                <span class="skill-tag">Seaborn</span>
-                                <span class="skill-tag">Streamlit</span>
-                                <span class="skill-tag">Dash</span>
-                            </div>
-                        </div>
-
-                        <div class="skill-card programming">
-                            <div class="skill-header">
-                                <div class="skill-icon">🔀</div>
-                                <div class="skill-title">Version Control</div>
-                            </div>
-                            <div class="skill-description">
-                                Proficient in code management and collaborative development practices.
-                            </div>
-                            <div class="skill-tags">
-                                <span class="skill-tag">Git</span>
-                                <span class="skill-tag">GitHub</span>
-                                <span class="skill-tag">Code Management</span>
-                                <span class="skill-tag">Collaboration</span>
-                            </div>
-                        </div>
-
-                        <div class="skill-card networks">
-                            <div class="skill-header">
-                                <div class="skill-icon">🌐</div>
-                                <div class="skill-title">Computer Networks</div>
-                            </div>
-                            <div class="skill-description">
-                                Understanding of network topology design, configuration, and maintenance.
-                            </div>
-                            <div class="skill-tags">
-                                <span class="skill-tag">TCP/IP</span>
-                                <span class="skill-tag">Network Topology</span>
-                                <span class="skill-tag">Configuration</span>
-                                <span class="skill-tag">Maintenance</span>
-                            </div>
-                        </div>
-
-                        <div class="skill-card automation">
-                            <div class="skill-header">
-                                <div class="skill-icon">🔧</div>
-                                <div class="skill-title">PLC Programming</div>
-                            </div>
-                            <div class="skill-description">
-                                Hands-on experience with programmable logic controllers for industrial automation.
-                            </div>
-                            <div class="skill-tags">
-                                <span class="skill-tag">Rockwell Automation</span>
-                                <span class="skill-tag">Industrial Control</span>
-                                <span class="skill-tag">Logic Programming</span>
-                            </div>
-                        </div>
-
-                        <div class="skill-card automation">
-                            <div class="skill-header">
-                                <div class="skill-icon">🖥️</div>
-                                <div class="skill-title">HMI & SCADA Development</div>
-                            </div>
-                            <div class="skill-description">
-                                Skilled in developing industrial interfaces using advanced automation tools.
-                            </div>
-                            <div class="skill-tags">
-                                <span class="skill-tag">Ignition</span>
-                                <span class="skill-tag">FactoryTalk View</span>
-                                <span class="skill-tag">Industrial HMI</span>
-                                <span class="skill-tag">SCADA</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Soft Skills Section -->
-                <div class="container" style="margin-top: 60px;" id="soft-skills">
-                    <div class="header">
-                        <h1 class="main-title">Soft Skills</h1>
-                        <p class="subtitle">Personal & Professional Attributes</p>
-                    </div>
-
-                    <div class="skills-grid">
-                        <div class="skill-card soft-skill">
-                            <div class="skill-header">
-                                <div class="skill-icon">🧩</div>
-                                <div class="skill-title">Problem Solving</div>
-                            </div>
-                            <div class="skill-description">
-                                Strong analytical thinking and ability to identify creative solutions to complex
-                                technical and engineering challenges.
-                            </div>
-                            <div class="skill-tags">
-                                <span class="skill-tag">Analytical Thinking</span>
-                                <span class="skill-tag">Creative Solutions</span>
-                                <span class="skill-tag">Critical Analysis</span>
-                            </div>
-                        </div>
-
-                        <div class="skill-card soft-skill">
-                            <div class="skill-header">
-                                <div class="skill-icon">🤝</div>
-                                <div class="skill-title">Teamwork</div>
-                            </div>
-                            <div class="skill-description">
-                                Excellent collaboration skills with ability to work effectively in diverse,
-                                multidisciplinary teams and contribute to shared goals.
-                            </div>
-                            <div class="skill-tags">
-                                <span class="skill-tag">Collaboration</span>
-                                <span class="skill-tag">Communication</span>
-                                <span class="skill-tag">Leadership</span>
-                                <span class="skill-tag">Adaptability</span>
-                            </div>
-                        </div>
-
-                        <div class="skill-card soft-skill">
-                            <div class="skill-header">
-                                <div class="skill-icon">💪</div>
-                                <div class="skill-title">Hardworking</div>
-                            </div>
-                            <div class="skill-description">
-                                Dedicated work ethic with commitment to delivering high-quality results and perseverance
-                                through challenging projects.
-                            </div>
-                            <div class="skill-tags">
-                                <span class="skill-tag">Dedication</span>
-                                <span class="skill-tag">Persistence</span>
-                                <span class="skill-tag">Quality Focus</span>
-                                <span class="skill-tag">Reliability</span>
-                            </div>
-                        </div>
-
-                        <div class="skill-card soft-skill">
-                            <div class="skill-header">
-                                <div class="skill-icon">🚀</div>
-                                <div class="skill-title">Motivated to Learn</div>
-                            </div>
-                            <div class="skill-description">
-                                Passionate about continuous learning and staying updated with emerging technologies,
-                                trends, and best practices in engineering.
-                            </div>
-                            <div class="skill-tags">
-                                <span class="skill-tag">Continuous Learning</span>
-                                <span class="skill-tag">Curiosity</span>
-                                <span class="skill-tag">Self-Improvement</span>
-                                <span class="skill-tag">Innovation</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!--Experiencia laboral-->
-                <section id="mi_experiencia" class="section">
-                    <h2 class="section-title">My work experience</h2>
-                    <div class="timeline">
-                        <div class="timeline-item">
-                            <h3 class="job-title">Project Engineer</h3>
-                            <div class="company">Sistemas IQ</div>
-                            <div class="duration">2024 - Present</div>
-                            <div class="description">
-                                Tasks focused on industrial control and automation. Primarily centered on the
-                                development of graphical user interfaces <span class="tech-highlight">HMI</span>,
-                                supervision <span class="tech-highlight">SCADA</span>, industrial network maintenance,
-                                as well as installation and configuration of industrial hardware.
-                            </div>
-                        </div>
-
-                        <div class="timeline-item">
-                            <h3 class="job-title">Data Analyst Internship</h3>
-                            <div class="company">Sporting Football Club</div>
-                            <div class="duration">2024</div>
-                            <div class="description">
-                                Development of a web-based data application for sports analytics. Implementation of
-                                visualization tools and information processing to optimize team performance and
-                                strategic decision-making.
-                            </div>
-                        </div>
-                    </div>
-
-                </section>
-
-                <!--Educación-->
-                <section id="mi_educacion" class="section">
-                    <h2 class="section-title">Education</h2>
-
-                    <div class="timeline">
-                        <div class="timeline-item">
-                            <h3 class="student-title">Bachelor's Degree in Electrical Engineering</h3>
-                            <div class="company">University of Costa Rica</div>
-                            <div class="duration">2019 - 2024</div>
-                            <div class="description">
-                                Comprehensive program covering electrical systems, power electronics, control systems,
-                                and engineering fundamentals. Developed strong analytical and problem-solving skills
-                                with hands-on experience in industrial applications.
-                            </div>
-                        </div>
-
-                        <div class="timeline-item">
-                            <h3 class="student-title ">Licentiate Degree Student</h3>
-                            <div class="company">University of Costa Rica</div>
-                            <div class="duration">2024 - Present</div>
-                            <div class="description">
-                                Advanced studies in electrical engineering with focus on specialized applications and
-                                research methodologies. Continuing education to deepen expertise in industrial control
-                                systems and emerging technologies.
-                            </div>
-                        </div>
-
-                        <div class="timeline-item">
-                            <h3 class="student-title ">Specialization in Web Design</h3>
-                            <div class="company">Fidelitas University</div>
-                            <div class="duration">2025 - Present</div>
-                            <div class="description">
-                                Specialized training in modern web development, user interface design, and digital user
-                                experience. Combining technical engineering background with contemporary web
-                                technologies and design principles.
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section id="mis_idiomas" class="section">
-                    <h2 class="section-title">Language skills</h2>
-                    <div class="lang-grid">
-                        <div class="language-item">
-                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Flag_of_Spain.svg/2560px-Flag_of_Spain.svg.png"
-                                alt="">
-                            <div class="language-name">🇪🇸 Spanish</div>
-                            <div class="language-level">Native Speaker</div>
-                        </div>
-                        <div class="language-item">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Flag_of_the_United_Kingdom_%282-3%29.svg/2560px-Flag_of_the_United_Kingdom_%282-3%29.svg.png"
-                                alt="">
-
-                            <div class="language-name">🇪🇳 English</div>
-                            <div class="language-level">Advanced</div>
-                            <div class="language-cert">TOEFL 93 Score</div>
-                        </div>
-                        <div class="language-item">
-                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Flag_of_Japan.svg/330px-Flag_of_Japan.svg.png"
-                                alt="">
-
-                            <div class="language-name">🇯🇵 Japanese</div>
-                            <div class="language-level">Intermediate</div>
-                            <div class="language-cert">JLPT N4</div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
-
-
-        <script src="scr/script.js"></script>
-
-    </main>
+<script src="scr/script.js"></script>
 </body>
-
 </html>
